@@ -1,0 +1,92 @@
+.completed p{
+    text-decoration: line-through;
+    opacity: 0.3;
+}
+
+.completed .complete__button{
+    background-image: linear-gradient(to bottom right, #55DDFF, #C058F3);
+    cursor: pointer;
+    border: none;
+}
+
+.completed .complete__button i{
+    opacity: 1;
+    color: white;
+}
+
+li{
+    width: 540px;
+    color: #494C6B;
+    background-color: white;
+    font-family: 'Josefin Sans';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.25px;
+    padding: 20px 25px;
+    border-bottom: 1px solid #E3E4F1;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.complete__button{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid #E3E4F1;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2px;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.complete__button i{
+    opacity: 0;
+}
+
+
+
+/* Dark Mode */
+
+
+
+.dark li{
+    background-color: #25273D;
+    border-bottom: 1px solid #393A4B;
+}
+
+.dark li p{
+    color: #C8CBE7;
+}
+
+
+
+/* Media */
+
+
+
+@media screen and (max-width: 650px){
+    li{
+        width: 440px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    li{
+        width: 340px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    li{
+        width: 250px;
+        font-size: 16px;
+        padding: 15px 20px;
+    }
+}
