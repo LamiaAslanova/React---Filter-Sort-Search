@@ -18,6 +18,7 @@ const TodoList = ({ todos, setTodos, filter, setFilter }) => {
                 isCompleted: false
             }
             setTodos([...todos, newTodoItem])
+            console.log(todos);
             localStorage.setItem('todos', JSON.stringify([...todos, newTodoItem]))
             setNewTodo("")
         }
@@ -34,7 +35,7 @@ const TodoList = ({ todos, setTodos, filter, setFilter }) => {
 
     const deleteCompleted = () => {
         setTodos(todos.filter(todo => todo.isCompleted == false));
-        localStorage.setItem('todos', JSON.stringify(todos.filter(todo => todo.completed == false)))
+        localStorage.setItem('todos', JSON.stringify(todos.filter(todo => todo.isCompleted == false)))
     };
 
     return (
